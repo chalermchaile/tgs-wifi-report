@@ -1,0 +1,812 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เธฃเธฒเธขเธเธฒเธเธงเธดเน€เธเธฃเธฒเธฐเธซเน Wi-Fi โ€” TGS at BYG (31 เธ•.เธ. 2026)</title>
+<style>
+  :root{
+    --bg:#f4f6fa;
+    --card:#ffffff;
+    --ink:#0f172a;
+    --ink2:#475569;
+    --ink3:#7c8aa0;
+    --line:#e6ebf2;
+    --red:#e11d48;
+    --amber:#f59e0b;
+    --green:#10b981;
+    --blue:#3b82f6;
+    --violet:#8b5cf6;
+    --slate:#94a3b8;
+    --shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.06);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Segoe UI","Leelawadee UI","Noto Sans Thai",Tahoma,sans-serif;
+    font-size:15px;line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{max-width:1180px;margin:0 auto;padding:0 20px 60px}
+  .header{
+    background:
+      radial-gradient(1100px 420px at 8% -20%, rgba(59,130,246,.35), transparent 60%),
+      radial-gradient(900px 420px at 95% 0%, rgba(139,92,246,.28), transparent 60%),
+      linear-gradient(135deg,#0b1220 0%,#111c33 55%,#0e1a2e 100%);
+    color:#e8eef8;padding:38px 0 34px;margin-bottom:26px;
+    border-bottom:1px solid rgba(255,255,255,.06);
+  }
+  .header .page{padding-bottom:0}
+  .eyebrow{display:flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#93c5fd;font-weight:600}
+  .dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.16)}
+  h1{margin:12px 0 8px;font-size:31px;line-height:1.25;font-weight:700;letter-spacing:-.01em}
+  h1 span{color:#93c5fd}
+  .sub{color:#a9b8cd;font-size:14.5px;max-width:820px}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .badge{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#dbe6f5;
+    padding:5px 11px;border-radius:999px;font-size:12.5px;display:inline-flex;align-items:center;gap:7px}
+  .badge b{color:#fff;font-weight:600}
+  .badge .sq{width:8px;height:8px;border-radius:2px}
+
+  section{margin:34px 0}
+  h2{font-size:19px;margin:0 0 4px;letter-spacing:-.01em}
+  h2 .num{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;
+    background:#e8eefb;color:#2563eb;font-size:13px;font-weight:700;margin-right:10px;vertical-align:2px}
+  .lead{color:var(--ink2);font-size:14px;margin:0 0 16px}
+
+  .grid{display:grid;gap:16px}
+  .g6{grid-template-columns:repeat(6,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px}
+  .card h3{margin:0 0 2px;font-size:15px;font-weight:650}
+  .card .hint{color:var(--ink3);font-size:12.5px;margin:0 0 14px}
+
+  .kpi{padding:16px 16px 14px}
+  .kpi .label{font-size:12.5px;color:var(--ink3);display:flex;align-items:center;gap:6px}
+  .kpi .value{font-size:27px;font-weight:700;letter-spacing:-.02em;margin-top:6px;line-height:1.1}
+  .kpi .value small{font-size:13px;font-weight:500;color:var(--ink3);letter-spacing:0}
+  .kpi .foot{font-size:12px;color:var(--ink3);margin-top:6px}
+  .tone-red{color:var(--red)} .tone-amber{color:var(--amber)} .tone-green{color:var(--green)} .tone-blue{color:var(--blue)}
+  .bar-mini{height:6px;border-radius:999px;background:#eef2f7;margin-top:10px;overflow:hidden}
+  .bar-mini i{display:block;height:100%;border-radius:999px}
+
+  .finding{display:flex;gap:14px;padding:16px 18px;border-radius:14px;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow)}
+  .finding .icon{width:40px;height:40px;border-radius:11px;flex:0 0 40px;display:flex;align-items:center;justify-content:center;font-size:19px}
+  .finding h4{margin:1px 0 5px;font-size:14.5px}
+  .finding p{margin:0;font-size:13.5px;color:var(--ink2)}
+  .f-red .icon{background:#fee2e8;color:#be123c}
+  .f-amber .icon{background:#fef3c7;color:#b45309}
+  .f-blue .icon{background:#dbeafe;color:#1d4ed8}
+
+  .donuts{display:flex;align-items:center;justify-content:space-around;gap:10px;flex-wrap:wrap}
+  .donut-wrap{text-align:center}
+  .donut-wrap .cap{font-size:12.5px;color:var(--ink3);margin-top:2px}
+  .donut-wrap .cap b{color:var(--ink);font-weight:650}
+  .donut-center{font-size:22px;font-weight:700}
+  .legend{display:flex;flex-direction:column;gap:7px;font-size:12.5px;color:var(--ink2);min-width:130px}
+  .legend div{display:flex;align-items:center;gap:8px}
+  .legend i{width:9px;height:9px;border-radius:3px;display:inline-block}
+
+  /* stacked utilization */
+  .stack{margin-top:6px}
+  .stack-row{margin:14px 0 4px}
+  .stack-top{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink2);margin-bottom:6px}
+  .stack-top b{color:var(--ink);font-weight:650}
+  .stack-bar{display:flex;height:26px;border-radius:8px;overflow:hidden;background:#eef2f7}
+  .stack-bar i{display:block;height:100%;transition:width .9s cubic-bezier(.2,.75,.25,1);width:0}
+  .seg-tx{background:linear-gradient(180deg,#60a5fa,#3b82f6)}
+  .seg-rx{background:linear-gradient(180deg,#818cf8,#6366f1)}
+  .seg-int{background:linear-gradient(180deg,#fb7185,#e11d48)}
+  .seg-idle{background:#e9eef6}
+  .stack-foot{display:flex;gap:14px;font-size:11.5px;color:var(--ink3);margin-top:7px;flex-wrap:wrap}
+  .stack-foot span{display:inline-flex;align-items:center;gap:6px}
+  .stack-foot i{width:8px;height:8px;border-radius:2px}
+
+  /* vertical bars */
+  .chart{position:relative;margin-top:10px}
+  .axis{position:absolute;left:0;right:0;border-top:1px dashed #e7ecf4}
+  .bars{display:flex;align-items:flex-end;gap:5px;height:220px;position:relative;z-index:1;padding:0 2px}
+  .bcol{flex:1 1 0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative}
+  .bcol.gap{margin-left:12px}
+  .bcol .v{font-size:10.5px;color:var(--ink3);margin-bottom:4px;font-variant-numeric:tabular-nums}
+  .bcol .b{width:100%;max-width:26px;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,#cbd5e1,#94a3b8);
+    transition:height 1s cubic-bezier(.2,.75,.25,1);height:0}
+  .bcol .l{font-size:10.5px;color:var(--ink3);margin-top:6px;font-variant-numeric:tabular-nums}
+  .bcol.cur .b{background:linear-gradient(180deg,#fb7185,#e11d48)}
+  .bcol.cur .l{color:#be123c;font-weight:700}
+  .bcol.good .b{background:linear-gradient(180deg,#34d399,#10b981)}
+  .bcol.good .l{color:#047857;font-weight:700}
+  .bcol.dfs .b{background:linear-gradient(180deg,#93c5fd,#3b82f6)}
+  .bcol.dfs .l{color:#1d4ed8;font-weight:600}
+  .bcol:hover .b{filter:brightness(1.06)}
+  .chart-note{font-size:12px;color:var(--ink3);margin-top:12px}
+
+  .tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:650;letter-spacing:.01em}
+  .tag-red{background:#fee2e8;color:#be123c}
+  .tag-green{background:#d1fae5;color:#047857}
+  .tag-amber{background:#fef3c7;color:#b45309}
+  .tag-blue{background:#dbeafe;color:#1d4ed8}
+  .tag-gray{background:#eef2f7;color:#64748b}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th{text-align:left;color:var(--ink3);font-weight:600;font-size:12px;letter-spacing:.03em;text-transform:uppercase;
+    padding:9px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+  td{padding:10px;border-bottom:1px solid #f1f5f9;vertical-align:middle}
+  tr:last-child td{border-bottom:none}
+  tr.own td{background:#f8fbff}
+  tr.own td:first-child{box-shadow:inset 3px 0 0 #3b82f6}
+  .mono{font-family:"Cascadia Mono",Consolas,monospace;font-size:12px;color:var(--ink2)}
+  .rssi-cell{display:flex;align-items:center;gap:9px}
+  .rssi-track{flex:1;height:7px;border-radius:999px;background:#eef2f7;min-width:56px;overflow:hidden}
+  .rssi-track i{display:block;height:100%;border-radius:999px}
+
+  .prio{display:flex;align-items:center;gap:8px;font-weight:650;font-size:12.5px}
+  .p1{color:#be123c}.p2{color:#b45309}.p3{color:#1d4ed8}
+
+  .todo{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .todo li{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--ink2)}
+  .checkbox{width:18px;height:18px;border-radius:5px;border:1.5px solid #cbd5e1;flex:0 0 18px;margin-top:2px;
+    display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;background:#fff}
+  .todo li.done .checkbox{background:var(--green);border-color:var(--green)}
+
+  .callout{background:linear-gradient(135deg,#0f172a,#15233d);color:#dbe6f5;border-radius:16px;padding:20px 22px;
+    display:flex;gap:16px;align-items:flex-start;box-shadow:var(--shadow)}
+  .callout .ic{font-size:22px;line-height:1}
+  .callout b{color:#fff}
+  .callout .txt{font-size:13.8px;color:#b9c7db}
+  .callout .txt b{color:#e8eef8}
+
+  .footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);color:var(--ink3);font-size:12.5px}
+  .footer code{background:#eef2f7;padding:2px 6px;border-radius:5px;font-size:11.5px;color:#475569}
+
+  .print-btn{position:fixed;right:22px;bottom:22px;z-index:50;background:#0f172a;color:#fff;border:none;
+    padding:12px 18px;border-radius:12px;font-size:13.5px;font-family:inherit;font-weight:600;cursor:pointer;
+    box-shadow:0 10px 30px rgba(15,23,42,.28);display:flex;align-items:center;gap:8px}
+  .print-btn:hover{background:#1e293b}
+  .src{font-size:12px;color:var(--ink3);margin-top:6px}
+
+  @media (max-width:980px){
+    .g6{grid-template-columns:repeat(3,1fr)}
+    .g3,.g2{grid-template-columns:1fr}
+    h1{font-size:25px}
+  }
+  @media (max-width:560px){
+    .g6{grid-template-columns:repeat(2,1fr)}
+    .bars{height:180px}
+    .bcol .v{display:none}
+  }
+  @media print{
+    body{background:#fff}
+    .print-btn{display:none}
+    .header{background:#0f172a !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .card,.finding,.callout{box-shadow:none}
+    section{break-inside:avoid}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+
+  /* ---------- live monitor strip ---------- */
+  .live{margin:22px 0 4px;background:linear-gradient(135deg,#0f172a,#16233c);border-radius:16px;
+    padding:16px 18px 15px;color:#dbe6f5;box-shadow:0 14px 34px rgba(15,23,42,.18)}
+  .live-top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:13px}
+  .live-label{display:flex;align-items:center;gap:9px;font-size:12px;letter-spacing:.16em;font-weight:700;color:#7dd3fc}
+  .pulse{width:9px;height:9px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(34,197,94,.55)}
+    70%{box-shadow:0 0 0 9px rgba(34,197,94,0)}
+    100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}
+  }
+  .live-ts{color:#8fa2ba;letter-spacing:0;font-weight:500;font-size:11.5px}
+  .live-state{font-size:12px;color:#8fa2ba}
+  .live-state.ok{color:#6ee7b7}
+  .live-state.bad{color:#fca5a5}
+  .live-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+  .lv{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:11px;padding:11px 12px;min-width:0}
+  .lv .k{font-size:11px;color:#93a6bd;display:flex;align-items:center;gap:6px;white-space:nowrap}
+  .lv .v{font-size:22px;font-weight:700;letter-spacing:-.02em;margin-top:4px;line-height:1.1;
+    color:#f1f5f9;font-variant-numeric:tabular-nums}
+  .lv .v small{font-size:12px;color:#8fa2ba;font-weight:500}
+  .lv .s{font-size:11px;color:#8fa2ba;margin-top:4px;font-variant-numeric:tabular-nums;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis}
+  .lv .v.ok{color:#34d399}.lv .v.warn{color:#fbbf24}.lv .v.bad{color:#fb7185}
+  .lv .s .ok{color:#34d399;font-weight:650}.lv .s .warn{color:#fbbf24;font-weight:650}.lv .s .bad{color:#fb7185;font-weight:650}
+  .chip{font-size:10px;padding:1px 6px;border-radius:999px;background:rgba(147,197,253,.15);
+    color:#93c5fd;font-weight:600;letter-spacing:0}
+  @media (max-width:980px){.live-grid{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:560px){.live-grid{grid-template-columns:repeat(2,1fr)}}
+  @media print{.live{display:none}}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="page">
+    <div class="eyebrow"><span class="dot"></span> WiFi Health Report ยท Omada Controller</div>
+    <h1>เธฃเธฒเธขเธเธฒเธเธงเธดเน€เธเธฃเธฒเธฐเธซเน Wi-Fi <span>TGS at BYG</span></h1>
+    <p class="sub">
+      เธ•เธฃเธงเธเธชเธญเธเธเธฒเธ Omada Controller เธฃเนเธงเธกเธเธฑเธเธเธฒเธฃเธชเนเธเธเธเธฅเธทเนเธเธเธฃเธดเธเธซเธเนเธฒเธเธฒเธ โ€” เธชเธฃเธธเธเธชเธฒเน€เธซเธ•เธธเธเธญเธ Tx Retry เธชเธนเธ,
+      เธเธฒเธฃเนเธขเนเธเธเนเธญเธเธชเธฑเธเธเธฒเธ“ 5&nbsp;GHz เนเธฅเธฐเธเนเธญเน€เธชเธเธญเธเธฃเธฑเธเธเนเธฒเธ—เธตเนเธ—เธณเนเธ”เนเธ—เธฑเธเธ—เธต
+    </p>
+    <div class="badges">
+      <span class="badge"><span class="sq" style="background:#3b82f6"></span> Controller <b>v6.3.0.45</b></span>
+      <span class="badge"><span class="sq" style="background:#8b5cf6"></span> AP <b>EAP723 ร—2</b></span>
+      <span class="badge"><span class="sq" style="background:#10b981"></span> Site Health <b>86 / 100</b></span>
+      <span class="badge"><span class="sq" style="background:#f59e0b"></span> เน€เธเนเธเธเนเธญเธกเธนเธฅ <b>31 เธ•.เธ. 2026 ยท 13:14</b></span>
+      <span class="badge">Read-only ยท เนเธกเนเธกเธตเธเธฒเธฃเนเธเนเนเธเธเนเธฒ</span>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <!-- KPI -->
+  <div class="grid g6">
+    <div class="card kpi">
+      <div class="label">Site Health</div>
+      <div class="value tone-amber">86<small> /100</small></div>
+      <div class="bar-mini"><i style="width:86%;background:linear-gradient(90deg,#fbbf24,#f59e0b)"></i></div>
+      <div class="foot">เธเธฒเธเธเธฅเธฒเธ โ€” เธเธธเธ”เธ”เนเธงเธข wireless</div>
+    </div>
+    <div class="card kpi">
+      <div class="label">AP Online</div>
+      <div class="value tone-green">2<small> / 3</small></div>
+      <div class="bar-mini"><i style="width:66%;background:linear-gradient(90deg,#34d399,#10b981)"></i></div>
+      <div class="foot">AP-01 offline (เธชเธณเธฃเธญเธ)</div>
+    </div>
+    <div class="card kpi">
+      <div class="label">Wireless Clients</div>
+      <div class="value">17<small> เธเธ</small></div>
+      <div class="bar-mini"><i style="width:29%;background:linear-gradient(90deg,#818cf8,#6366f1)"></i></div>
+      <div class="foot">เธเธฒเธเธ—เธฑเนเธเธซเธกเธ” 58 เน€เธเธฃเธทเนเธญเธ</div>
+    </div>
+    <div class="card kpi">
+      <div class="label">Wired Clients</div>
+      <div class="value">41<small> เน€เธเธฃเธทเนเธญเธ</small></div>
+      <div class="bar-mini"><i style="width:71%;background:linear-gradient(90deg,#94a3b8,#64748b)"></i></div>
+      <div class="foot">เนเธกเนเธกเธต gateway เนเธ Omada</div>
+    </div>
+    <div class="card kpi">
+      <div class="label">Alerts / Rogue AP</div>
+      <div class="value tone-green">0<small> / 0</small></div>
+      <div class="bar-mini"><i style="width:100%;background:linear-gradient(90deg,#34d399,#10b981)"></i></div>
+      <div class="foot">เนเธกเนเธเธ rogue เธ—เธตเนเน€เธเนเธเธ เธฑเธข</div>
+    </div>
+    <div class="card kpi">
+      <div class="label">Tx Retry Rate</div>
+      <div class="value tone-red">30โ€“38<small>%</small></div>
+      <div class="bar-mini"><i style="width:38%;background:linear-gradient(90deg,#fb7185,#e11d48)"></i></div>
+      <div class="foot">เน€เธเนเธฒเธซเธกเธฒเธข &lt; 15%</div>
+    </div>
+  </div>
+
+  <!-- FINDINGS -->
+  <section>
+    <h2><span class="num">1</span>เธชเธฃเธธเธเธเธนเนเธเธฃเธดเธซเธฒเธฃ โ€” 3 เธเธฑเธเธซเธฒเธซเธฅเธฑเธ</h2>
+    <p class="lead">เธ•เธฑเธงเน€เธฅเธเธเธฒเธ Controller เนเธฅเธฐเธเนเธฒ beacon เธ—เธตเนเธชเนเธเธเนเธ”เนเธเธตเนเนเธเธ—เธตเนเธชเธฒเน€เธซเธ•เธธเน€เธ”เธตเธขเธงเธเธฑเธ</p>
+    <div class="grid g3">
+      <div class="finding f-red">
+        <div class="icon">๐“ก</div>
+        <div>
+          <h4>เธเนเธญเธ 36 เนเธญเธญเธฑเธ”เธ—เธตเนเธชเธธเธ”เนเธเธขเนเธฒเธ</h4>
+          <p>AP เธ—เธฑเนเธเธชเธญเธเธญเธขเธนเนเธเนเธญเธ 36 เนเธฅเธฐเธกเธต <b>9 BSS เธเธญเธเธเธนเธเธญเธทเนเธ</b> เนเธเน 80&nbsp;MHz เธเธฃเนเธญเธกเธเนเธงเธ 36โ€“48
+             (เนเธฃเธเธชเธธเธ” โ’65&nbsp;dBm) เธฃเธงเธกเน€เธเนเธ 13 BSS เนเธเธฃเนเธญเธฒเธเธฒเธจเน€เธ”เธตเธขเธงเธเธฑเธ</p>
+        </div>
+      </div>
+      <div class="finding f-amber">
+        <div class="icon">๐”</div>
+        <div>
+          <h4>Tx Retry 30โ€“38% เธชเธนเธเธเธงเนเธฒเน€เธเนเธฒ 2 เน€เธ—เนเธฒ</h4>
+          <p>เธ•เธฃเธเธเธฑเธ interference เธ—เธตเน AP เธฃเธฒเธขเธเธฒเธ (21% / 13%) โ€” เธขเธดเนเธเธเนเธญเธเนเธญเธญเธฑเธ” เธเนเธณเธชเนเธเธขเธดเนเธเธกเธฒเธ
+             เธ—เธณเนเธซเน throughput เธเธฃเธดเธเธ•เนเธณเธเธงเนเธฒเธชเน€เธเธเนเธฅเธฐเธกเธตเธญเธฒเธเธฒเธฃเธซเธเนเธงเธเน€เธเนเธเธเนเธงเธ</p>
+        </div>
+      </div>
+      <div class="finding f-blue">
+        <div class="icon">๐“ถ</div>
+        <div>
+          <h4>2.4 GHz เนเธกเนเนเธซเนเธเธฃเธดเธเธฒเธฃเน€เธฅเธข</h4>
+          <p>เธชเนเธเธเนเธกเนเธเธ BSS 2.4&nbsp;GHz เธเธญเธ AP เน€เธฅเธข (AP-03 เธเธดเธ” radio, AP-02 เน€เธเธดเธ”เนเธ•เนเนเธกเนเธกเธต SSID)
+             เนเธฅเธฐเธ—เธฑเนเธเธชเธญเธเธฃเธฑเธ <b>20&nbsp;MHz เธเธ Wi-Fi 7</b> เธเธถเนเธเธเธณเธเธฑเธ” throughput เนเธงเนเธ—เธตเน ~286&nbsp;Mbps</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEALTH -->
+  <section>
+    <h2><span class="num">2</span>เธชเธธเธเธ เธฒเธเธฃเธฐเธเธเนเธฅเธฐเธเธธเธ“เธ เธฒเธเธชเธฑเธเธเธฒเธ“</h2>
+    <p class="lead">เธชเธฃเธธเธเธเธฒเธ dashboard, เธฃเธฒเธขเธเธทเนเธญ client เนเธฅเธฐเธเนเธฒเธ—เธตเนเธงเธฑเธ”เนเธ”เนเธเธฒเธ beacon</p>
+    <div class="grid g3">
+      <div class="card">
+        <h3>Site Health</h3>
+        <p class="hint">เธเธฐเนเธเธเธฃเธงเธกเธเธญเธเนเธเธ•เน</p>
+        <div class="donuts">
+          <div class="donut-wrap">
+            <svg id="d-health" width="160" height="160" viewBox="0 0 160 160"></svg>
+            <div class="cap">เน€เธเนเธฒเธซเธกเธฒเธข <b>โฅ 90</b></div>
+          </div>
+          <div class="legend">
+            <div><i style="background:#f59e0b"></i> เธเธฐเนเธเธเธเธฑเธเธเธธเธเธฑเธ <b style="margin-left:auto">86</b></div>
+            <div><i style="background:#eef2f7"></i> เธ—เธตเนเธซเธฒเธขเนเธ <b style="margin-left:auto">14</b></div>
+            <div style="color:#7c8aa0;font-size:11.5px;margin-top:4px">เธเธธเธ”เธซเธฅเธฑเธ: wireless experience<br>เนเธฅเธฐ retry rate</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>เธเธธเธ“เธ เธฒเธ Client (17 เธเธ)</h3>
+        <p class="hint">RSSI เน€เธเธฅเธตเนเธข โ’55.4 dBm ยท เนเธขเนเธชเธธเธ” โ’61 ยท เธ”เธตเธชเธธเธ” โ’44</p>
+        <div class="donuts">
+          <div class="donut-wrap">
+            <svg id="d-clients" width="160" height="160" viewBox="0 0 160 160"></svg>
+            <div class="cap">เธ—เธธเธเธเธเธญเธขเธนเนเนเธเน€เธเธ“เธ‘เน <b>เธ”เธตโ€“เธเธญเนเธเน</b></div>
+          </div>
+          <div class="legend">
+            <div><i style="background:#10b981"></i> Good (&gt;โ’60) <b style="margin-left:auto">15</b></div>
+            <div><i style="background:#f59e0b"></i> Fair (โ’60โ€ฆโ’67) <b style="margin-left:auto">2</b></div>
+            <div><i style="background:#e11d48"></i> Poor (&lt;โ’67) <b style="margin-left:auto">0</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>เธชเธ–เธฒเธเธฐเธญเธธเธเธเธฃเธ“เน</h3>
+        <p class="hint">12 เธญเธธเธเธเธฃเธ“เนเนเธเนเธเธ•เน ยท 3 เธ•เธฑเธง offline</p>
+        <div class="donuts">
+          <div class="donut-wrap">
+            <svg id="d-devices" width="160" height="160" viewBox="0 0 160 160"></svg>
+            <div class="cap">Online <b>9</b> / Offline <b>3</b></div>
+          </div>
+          <div class="legend">
+            <div><i style="background:#10b981"></i> Online <b style="margin-left:auto">9</b></div>
+            <div><i style="background:#e11d48"></i> Offline <b style="margin-left:auto">3</b></div>
+            <div style="color:#7c8aa0;font-size:11.5px;margin-top:4px">AP-01 ยท SW-03 ยท SW-04<br>เน€เธเนเธเธเธญเธเธชเธณเธฃเธญเธ เนเธกเนเธเธฃเธฐเธ—เธเธเธฒเธ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AP PERF -->
+  <section>
+    <h2><span class="num">3</span>เธเธฃเธฐเธชเธดเธ—เธเธดเธ เธฒเธ AP เนเธฅเธฐเธเธฒเธฃเนเธเนเธเธฒเธเธเนเธญเธเธชเธฑเธเธเธฒเธ“</h2>
+    <p class="lead">AP เธ—เธฑเนเธเธเธนเนเธเนเธญเธ 36 ยท 20 MHz ยท Tx Power 25 dBm (เธชเธนเธเธชเธธเธ”) ยท uptime ~5 เธเธก. 44 เธเธฒเธ—เธต</p>
+    <div class="grid g2">
+      <div class="card">
+        <h3>Channel Utilization (เนเธเนเธเธ•เธฒเธก tipo)</h3>
+        <p class="hint">เธชเธฑเธ”เธชเนเธงเธเน€เธงเธฅเธฒเธ—เธตเนเธญเธฒเธเธฒเธจเธ–เธนเธเนเธเน โ€” AP-02 60% ยท AP-03 54%</p>
+        <div class="stack" id="stack"></div>
+        <div class="stack-foot">
+          <span><i style="background:#3b82f6"></i> Tx</span>
+          <span><i style="background:#6366f1"></i> Rx</span>
+          <span><i style="background:#e11d48"></i> Interference</span>
+          <span><i style="background:#e9eef6;border:1px solid #dbe3ee"></i> Idle</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Tx Retry Rate</h3>
+        <p class="hint">เธขเธดเนเธเธชเธนเธ = เธขเธดเนเธเธ•เนเธญเธเธชเนเธเธเนเธณ โ’ เธซเธเนเธงเธเนเธฅเธฐ throughput เธ•เธ</p>
+        <div class="chart" style="height:150px;display:flex;align-items:flex-end;gap:26px;padding:0 6px 22px">
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative">
+            <div style="font-size:13px;font-weight:700;color:#be123c;margin-bottom:6px">30.1%</div>
+            <div id="retry-a" style="width:74px;border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,#fb7185,#e11d48);height:0;transition:height 1s cubic-bezier(.2,.75,.25,1)"></div>
+            <div style="position:absolute;bottom:-24px;font-size:12.5px;color:#475569">AP-02 ยท 9 clients</div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative">
+            <div style="font-size:13px;font-weight:700;color:#be123c;margin-bottom:6px">38.3%</div>
+            <div id="retry-b" style="width:74px;border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,#fb7185,#be123c);height:0;transition:height 1s cubic-bezier(.2,.75,.25,1)"></div>
+            <div style="position:absolute;bottom:-24px;font-size:12.5px;color:#475569">AP-03 ยท 8 clients</div>
+          </div>
+          <div style="position:absolute;left:0;right:0;bottom:42px;border-top:2px dashed #10b981"></div>
+          <div style="position:absolute;right:2px;bottom:46px;font-size:11px;color:#047857;font-weight:650">เน€เธเนเธฒ 15%</div>
+        </div>
+        <div class="chart-note">เธ—เธฑเนเธเธชเธญเธ AP เธชเธนเธเธเธงเนเธฒเน€เธเนเธฒ 2โ€“2.5 เน€เธ—เนเธฒ เนเธฅเธฐเธชเธนเธเธเธถเนเธเน€เธกเธทเนเธญ client เธกเธฒเธเธเธถเนเธ (AP-03 เธซเธเธฑเธเธชเธธเธ”)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHANNEL CONGESTION -->
+  <section>
+    <h2><span class="num">4</span>เธเธงเธฒเธกเนเธญเธญเธฑเธ”เธเธญเธเธเนเธญเธ 5 GHz (เธชเนเธเธเธเธฃเธดเธเธซเธเนเธฒเธเธฒเธ)</h2>
+    <p class="lead">
+      เธชเนเธเธเธเธ <b>64 BSS / 37 SSID</b> (5&nbsp;GHz 58 BSS) โ€” เธเธฃเธฒเธเธเธฑเธ AP เธ—เธตเนเนเธเนเธเธฅเธทเนเธ <b>เธ—เธฑเธเธเนเธญเธเธเธฃเธดเธ</b>
+      เธ•เธฒเธกเธเธงเธฒเธกเธเธงเนเธฒเธเธเนเธญเธ (20/40/80 MHz) เธ–เนเธงเธเธเนเธณเธซเธเธฑเธเธ”เนเธงเธขเธฃเธฐเธ”เธฑเธเธชเธฑเธเธเธฒเธ“ ยท <b>เธขเธดเนเธเธ•เนเธณเธขเธดเนเธเธ”เธต</b>
+    </p>
+    <div class="card">
+      <div class="chart">
+        <div class="axis" style="bottom:22px"></div>
+        <div class="axis" style="bottom:77px;border-color:#eef2f7"></div>
+        <div class="axis" style="bottom:132px;border-color:#eef2f7"></div>
+        <div class="axis" style="bottom:187px;border-color:#eef2f7"></div>
+        <div class="bars" id="chbars"></div>
+      </div>
+      <div class="chart-note">
+        <span class="tag tag-red">เธเนเธญเธ 36</span> เธ—เธตเนเนเธเนเธญเธขเธนเน โ€” 13 BSS (เธเธญเธเน€เธฃเธฒ 4 + เธเธนเธเธญเธทเนเธ 9) &nbsp;ยท&nbsp;
+        <span class="tag tag-green">เธเนเธญเธ 165</span> เธเนเธญเน€เธชเธเธญ โ€” 5 BSS, เธชเธฑเธเธเธฒเธ“ โ’71โ€ฆโ’76 &nbsp;ยท&nbsp;
+        <span class="tag tag-blue">108 / 112</span> เธ—เธฒเธเน€เธฅเธทเธญเธ DFS โ€” 4 BSS เธญเนเธญเธเธ—เธตเนเธชเธธเธ”
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERLAP TABLE -->
+  <section>
+    <h2><span class="num">5</span>เนเธเธฃเนเธเธฃเนเธเนเธญเธ 36 เธญเธขเธนเน</h2>
+    <p class="lead">13 BSS เธ—เธตเนเธเธฃเธญเธเธญเธฒเธเธฒเธจเธเนเธงเธ 36โ€“48 เธฃเนเธงเธกเธเธฑเธ AP เธเธญเธเน€เธฃเธฒ โ€” เธ•เธฑเธงเธ—เธตเนเนเธเน 80 MHz เธเธฐเธเธฃเนเธญเธกเธ—เธฑเนเธเธเธฅเนเธญเธ</p>
+    <div class="card" style="padding:8px 14px 6px">
+      <table>
+        <thead>
+          <tr><th>SSID</th><th>BSSID</th><th>RSSI</th><th>Primary</th><th>Width</th><th>เธซเธกเธฒเธขเน€เธซเธ•เธธ</th></tr>
+        </thead>
+        <tbody id="ovl"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section>
+    <h2><span class="num">6</span>เธเธธเธ“เธ เธฒเธเธชเธฑเธเธเธฒเธ“ Client</h2>
+    <p class="lead">17 client เธเธฃเธฐเธเธธเธเธ—เธตเน โ’55โ€ฆโ’59 dBm โ€” เนเธกเนเธกเธตเธเธเธญเนเธญเธเธเธงเนเธฒ โ’61 เนเธเธฅเธงเนเธฒ coverage เธเธญ เนเธ•เน throughput เธ–เธนเธเธเธณเธเธฑเธ”เธ”เนเธงเธขเธเธฅเธทเนเธเนเธ—เธฃเธ</p>
+    <div class="grid g2">
+      <div class="card">
+        <h3>เธเธฒเธฃเธเธฃเธฐเธเธฒเธข RSSI</h3>
+        <p class="hint">เธเธณเธเธงเธ client เธ•เนเธญเธเนเธงเธเธชเธฑเธเธเธฒเธ“ (dBm)</p>
+        <div class="chart" style="height:170px">
+          <div class="bars" id="rssi-hist" style="align-items:flex-end"></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>เธเนเธฒเธชเธณเธเธฑเธ</h3>
+        <p class="hint">เธชเธฃเธธเธเธเธฒเธ client list เนเธฅเธฐ AP statistics</p>
+        <table>
+          <tbody>
+            <tr><td>RSSI เน€เธเธฅเธตเนเธข</td><td style="text-align:right"><b>โ’55.4 dBm</b> <span class="tag tag-green">เธ”เธต</span></td></tr>
+            <tr><td>เนเธขเนเธชเธธเธ” / เธ”เธตเธชเธธเธ”</td><td style="text-align:right"><b>โ’61 / โ’44 dBm</b></td></tr>
+            <tr><td>Client เธ—เธตเน AP-02</td><td style="text-align:right"><b>9 เธเธ</b> ยท เน€เธเธฅเธตเนเธข โ’56.1</td></tr>
+            <tr><td>Client เธ—เธตเน AP-03</td><td style="text-align:right"><b>8 เธเธ</b> ยท เน€เธเธฅเธตเนเธข โ’54.8</td></tr>
+            <tr><td>PHY เธ—เธตเนเน€เธเธทเนเธญเธกเธ•เนเธญ</td><td style="text-align:right"><b>802.11ax / be</b> (5 GHz)</td></tr>
+            <tr><td>เธเนเธงเธ Tx rate เธ—เธตเนเน€เธซเนเธ</td><td style="text-align:right"><b>~144โ€“206 Mbps</b></td></tr>
+            <tr><td>Security</td><td style="text-align:right"><b>WPA2-PSK (CCMP)</b> + 802.11r</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOMMENDATIONS -->
+  <section>
+    <h2><span class="num">7</span>เธเนเธญเน€เธชเธเธญเนเธเธฐ (เน€เธฃเธตเธขเธเธ•เธฒเธกเธเธงเธฒเธกเธชเธณเธเธฑเธ)</h2>
+    <p class="lead">เธ—เธณเธเนเธญ 1 เธเนเธญเธๅ…เธเนเธญเน€เธ”เธตเธขเธงเธเนเน€เธซเนเธเธเธฅเธเธฑเธ” โ€” เนเธเนเน€เธงเธฅเธฒ ~5 เธเธฒเธ—เธต เนเธฅเธฐ client เธซเธฅเธธเธ”เธชเธฑเนเธ เน 1 เธเธฃเธฑเนเธ</p>
+    <div class="card" style="padding:8px 14px 6px">
+      <table>
+        <thead>
+          <tr><th style="width:90px">เธฅเธณเธ”เธฑเธ</th><th>เธเธฒเธฃเน€เธเธฅเธตเนเธขเธเนเธเธฅเธ</th><th>เน€เธซเธ•เธธเธเธฅ / เธเธฅเธ—เธตเนเธเธฒเธ”</th><th style="width:120px">เน€เธงเธฅเธฒ</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="prio p1">โ— P1</span></td>
+            <td><b>AP-03 โ’ เธเนเธญเธ 165, เธเธ 20 MHz</b></td>
+            <td>เธเนเธญเธ 165 เธกเธตเนเธเน 5 BSS เธ—เธตเน โ’71โ€ฆโ’76 เนเธฅเธฐเธ—เธธเธเธ•เธฑเธง 20 MHz โ’ เธฅเธ” BSS เธฃเนเธงเธกเธเธฒเธ 13 เน€เธซเธฅเธทเธญ 5, เนเธกเนเธ•เนเธญเธเนเธเน DFS</td>
+            <td><span class="tag tag-gray">~5 เธเธฒเธ—เธต</span></td>
+          </tr>
+          <tr>
+            <td><span class="prio p1">โ— P1</span></td>
+            <td><b>เธเธเธเธงเธฒเธกเธเธงเนเธฒเธ 20 MHz เธ—เธฑเนเธเธเธนเน</b></td>
+            <td>เน€เธเธทเนเธญเธเธเนเธฒเธเนเธเน 80 MHz เธเธฃเนเธญเธกเธเธฅเนเธญเธ 36โ€“48 เธญเธขเธนเนเนเธฅเนเธง เธเธฒเธฃเธเธขเธฒเธขเน€เธเนเธ 40/80 เธเธฐเธฃเธฑเธ interference เน€เธเธดเนเธกเธ—เธฑเธเธ—เธต</td>
+            <td><span class="tag tag-gray">เนเธกเนเธ•เนเธญเธเธ—เธณ</span></td>
+          </tr>
+          <tr>
+            <td><span class="prio p2">โ— P2</span></td>
+            <td><b>AP-02 เธเธเธเนเธญเธ 36</b></td>
+            <td>client เธขเธฑเธเนเธ”เน โ’56 เน€เธเธฅเธตเนเธข เนเธฅเธฐเนเธขเธเธเนเธงเธเธเธฅเธทเนเธเธเธฒเธ AP-03 (36 vs 165) เนเธกเนเธ—เธฑเธเธเธฑเธเน€เธฅเธข</td>
+            <td><span class="tag tag-gray">เนเธกเนเธ•เนเธญเธเธ—เธณ</span></td>
+          </tr>
+          <tr>
+            <td><span class="prio p2">โ— P2</span></td>
+            <td><b>เธฅเธ” Tx Power 25 โ’ 20 dBm</b> เธ—เธฑเนเธเธชเธญเธเธ•เธฑเธง</td>
+            <td>client เน€เธเธฅเธตเนเธข โ’55 dBm เนเธฃเธเน€เธเธดเธเธเธณเน€เธเนเธ เธฅเธ” cell overlap / sticky client เนเธฅเธฐเธฅเธ” interference เธเนเธฒเธกเธเธนเธ</td>
+            <td><span class="tag tag-gray">~2 เธเธฒเธ—เธต</span></td>
+          </tr>
+          <tr>
+            <td><span class="prio p3">โ— P3</span></td>
+            <td><b>เธ—เธฒเธเน€เธฅเธทเธญเธ: AP-03 โ’ 108/112 (DFS) 40 MHz</b></td>
+            <td>เธเนเธญเธเนเธฅเนเธเธชเธธเธ” (score 31) เนเธฅเธฐเนเธ”เน 40 MHz โ€” เนเธ•เนเธกเธต CAC 1โ€“10 เธเธฒเธ—เธต เนเธฅเธฐเน€เธชเธตเนเธขเธ radar เนเธฅเนเธเนเธญเธ เนเธเธฐเธเธณเน€เธเธเธฒเธฐเธเนเธงเธเธ—เธตเนเธ•เนเธญเธเธเธฒเธฃ throughput เธชเธนเธ</td>
+            <td><span class="tag tag-amber">เธ—เธณเน€เธกเธทเนเธญเธเธณเน€เธเนเธ</span></td>
+          </tr>
+          <tr>
+            <td><span class="prio p3">โ— P3</span></td>
+            <td><b>เธ–เนเธฒเน€เธเธดเธ” 2.4 GHz โ’ ch1 (AP-02) + ch11 (AP-03)</b></td>
+            <td>เธซเนเธฒเธกเนเธเน ch6 เน€เธเธฃเธฒเธฐเธกเธต GliveRemote เนเธฃเธ โ’41 dBm เธญเธขเธนเน โ€” ch1/ch11 เธกเธตเน€เธเธตเธขเธ 1 BSS เธ•เนเธญเธเนเธญเธ</td>
+            <td><span class="tag tag-gray">เธ–เนเธฒเธ•เนเธญเธเธเธฒเธฃ</span></td>
+          </tr>
+          <tr>
+            <td><span class="prio p3">โ— P3</span></td>
+            <td><b>เธ•เธฃเธงเธ AP-01 / SW-03 / SW-04 เธ—เธตเน offline</b></td>
+            <td>เนเธกเนเธเธฃเธฐเธ—เธเธเธฒเธเธเธฑเธเธเธธเธเธฑเธ (เน€เธเนเธเธ•เธฑเธงเธชเธณเธฃเธญเธ) เนเธ•เนเธเธงเธฃเน€เธเนเธเธชเธฒเธข/POE เธซเธฅเธฑเธเธเธฒเธเน€เธฅเธดเธ</td>
+            <td><span class="tag tag-gray">เธซเธฅเธฑเธเธเธฒเธ</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TARGETS -->
+  <section>
+    <h2><span class="num">8</span>เน€เธเนเธฒเธ—เธตเนเธเธงเธฃเน€เธซเนเธเธซเธฅเธฑเธเธเธฃเธฑเธ</h2>
+    <div class="grid g3">
+      <div class="card">
+        <h3>Tx Retry</h3>
+        <p class="hint">เธเนเธญเธ โ’ เธซเธฅเธฑเธ</p>
+        <div style="display:flex;align-items:baseline;gap:10px">
+          <div style="font-size:30px;font-weight:700;color:#e11d48">38%</div>
+          <div style="color:#94a3b8">โ’</div>
+          <div style="font-size:30px;font-weight:700;color:#10b981">&lt;15%</div>
+        </div>
+        <div class="bar-mini" style="margin-top:14px"><i style="width:15%;background:linear-gradient(90deg,#34d399,#10b981)"></i></div>
+        <div class="foot" style="font-size:12px;color:#7c8aa0;margin-top:8px">เธงเธฑเธ”เธเนเธณเธซเธฅเธฑเธเน€เธเธฅเธตเนเธขเธเธเนเธญเธ 10โ€“15 เธเธฒเธ—เธต</div>
+      </div>
+      <div class="card">
+        <h3>Channel Utilization</h3>
+        <p class="hint">เธเนเธญเธ โ’ เธซเธฅเธฑเธ</p>
+        <div style="display:flex;align-items:baseline;gap:10px">
+          <div style="font-size:30px;font-weight:700;color:#f59e0b">60%</div>
+          <div style="color:#94a3b8">โ’</div>
+          <div style="font-size:30px;font-weight:700;color:#10b981">&lt;40%</div>
+        </div>
+        <div class="bar-mini" style="margin-top:14px"><i style="width:40%;background:linear-gradient(90deg,#34d399,#10b981)"></i></div>
+        <div class="foot" style="font-size:12px;color:#7c8aa0;margin-top:8px">AP-03 เธเธงเธฃเธฅเธเธกเธฒเนเธเธฅเน 30%</div>
+      </div>
+      <div class="card">
+        <h3>Site Health</h3>
+        <p class="hint">เธเนเธญเธ โ’ เธซเธฅเธฑเธ</p>
+        <div style="display:flex;align-items:baseline;gap:10px">
+          <div style="font-size:30px;font-weight:700;color:#f59e0b">86</div>
+          <div style="color:#94a3b8">โ’</div>
+          <div style="font-size:30px;font-weight:700;color:#10b981">โฅ90</div>
+        </div>
+        <div class="bar-mini" style="margin-top:14px"><i style="width:90%;background:linear-gradient(90deg,#34d399,#10b981)"></i></div>
+        <div class="foot" style="font-size:12px;color:#7c8aa0;margin-top:8px">client Fair 2 เธเธเธเธงเธฃเธเธฅเธฑเธเน€เธเนเธ Good</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTE -->
+  <section>
+    <div class="callout">
+      <div class="ic">โ ๏ธ</div>
+      <div class="txt">
+        <b>เธเนเธญเธเธณเธเธฑเธ”เธเธญเธเธเนเธญเธกเธนเธฅ:</b> เธเธฒเธฃเธชเนเธเธเธเธฅเธทเนเธเธ—เธณเธเธฒเธเธ•เธณเนเธซเธเนเธเนเธเนเธ•เธเธธเนเธ (เธกเธธเธกเธกเธญเธเธเธฑเนเธ client) เนเธกเนเนเธเนเธเธฒเธเธ•เธฑเธง AP
+        เธ•เธฑเธงเน€เธฅเธ BSS เธ—เธตเนเน€เธซเนเธเธญเธฒเธ fluctuate 63โ€“137 เธฃเธฐเธซเธงเนเธฒเธเธฃเธญเธ เนเธ•เนเธฅเธณเธ”เธฑเธเธเธงเธฒเธกเนเธญเธญเธฑเธ”เธเธญเธเธเนเธญเธเธชเธญเธ”เธเธฅเนเธญเธเธเธฑเธเธ—เธธเธเธฃเธญเธ
+        โ€” เธเธงเธฃเธเธ” <b>RF Scan เธ—เธตเน AP-02/AP-03</b> เนเธ Controller เน€เธเธทเนเธญเธขเธทเธเธขเธฑเธเธเนเธญเธเน€เธเธฅเธตเนเธขเธ เนเธฅเธฐเธชเนเธเธเธเนเธณเธซเธฅเธฑเธเน€เธเธฅเธตเนเธขเธ 10โ€“15 เธเธฒเธ—เธต
+        <div style="margin-top:10px;font-size:12.5px;color:#8fa2ba">
+          เธซเธกเธฒเธขเน€เธซเธ•เธธ: เธเนเธญเธ 165 เธฃเธญเธเธฃเธฑเธเน€เธเธเธฒเธฐ 20 MHz ยท เธเธฒเธฃเน€เธเธฅเธตเนเธขเธเธเนเธญเธเธ—เธณเนเธซเน client เธซเธฅเธธเธ”เธชเธฑเนเธ เน 1 เธเธฃเธฑเนเธ ยท เธเธงเธฃเธ—เธณเธเธญเธเธเนเธงเธ demo
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODO -->
+  <section>
+    <h2><span class="num">9</span>Checklist เธซเธเนเธฒเธเธฒเธ</h2>
+    <div class="grid g2">
+      <div class="card">
+        <h3>เธเนเธญเธเน€เธเธฅเธตเนเธขเธ</h3>
+        <ul class="todo">
+          <li><span class="checkbox"></span><span>เธเธ” RF Scan เธ—เธตเน AP-02 / AP-03 เนเธ Controller</span></li>
+          <li><span class="checkbox"></span><span>เนเธเนเธเธ—เธตเธก/bเธนเธเธ—เธตเนเน€เธเธตเนเธขเธงเธเนเธญเธเธงเนเธฒเธกเธต downtime ~1 เธเธฒเธ—เธต</span></li>
+          <li><span class="checkbox"></span><span>เธเธ”เธเนเธฒเน€เธ”เธดเธก: ch36, 20 MHz, 25 dBm</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>เธซเธฅเธฑเธเน€เธเธฅเธตเนเธขเธ (10โ€“15 เธเธฒเธ—เธต)</h3>
+        <ul class="todo">
+          <li><span class="checkbox"></span><span>AP-03 เธเธถเนเธ ch165 เนเธฅเธฐ client เธเธฅเธฑเธเธกเธฒเน€เธเธทเนเธญเธกเธ•เนเธญเธเธฃเธ 8 เธเธ</span></li>
+          <li><span class="checkbox"></span><span>Tx Retry &lt; 15% เนเธฅเธฐ util &lt; 40%</span></li>
+          <li><span class="checkbox"></span><span>Site Health โฅ 90 เนเธฅเธฐเนเธกเนเธกเธต alert เนเธซเธกเน</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <b>เนเธซเธฅเนเธเธเนเธญเธกเธนเธฅ:</b> Omada Controller v6.3.0.45 (site <span class="mono">68d37dc5bdde885af670b7b9</span> โ€TGS at BYGโ€) เธเนเธฒเธ REST API เนเธเธ read-only ยท
+    Windows WLAN API BSS scan (WiFiAnalyzer engine) ยท เน€เธเนเธเธเนเธญเธกเธนเธฅ 31 เธ•.เธ. 2026 เน€เธงเธฅเธฒ 13:14 (UTC+7)<br>
+    เนเธเธฅเนเธชเนเธเธเธ”เธดเธ: <code>scan.csv</code> ยท เนเธเธฅเนเธฃเธฒเธขเธเธฒเธ: <code>index.html</code><br>
+    <span style="color:#94a3b8">เธฃเธฒเธขเธเธฒเธเธเธตเนเธชเธฃเนเธฒเธเน€เธเธทเนเธญเธเธฒเธฃเธงเธดเน€เธเธฃเธฒเธฐเธซเนเธซเธเนเธฒเธเธฒเธ โ€” เนเธกเนเธกเธตเธเธฒเธฃเนเธเนเนเธ configuration เนเธ” เน เธเธ Controller</span>
+  </div>
+</div>
+
+<button class="print-btn" onclick="window.print()">๐–จ๏ธ เธเธดเธกเธเน / เธเธฑเธเธ—เธถเธ PDF</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- helpers ---------- */
+  function el(tag, cls, html){
+    var e = document.createElement(tag);
+    if(cls) e.className = cls;
+    if(html !== undefined) e.innerHTML = html;
+    return e;
+  }
+
+  function donut(svgId, size, r, sw, segments, centerTop, centerBottom){
+    var svg = document.getElementById(svgId);
+    if(!svg) return;
+    var cx = size/2, cy = size/2, c = 2*Math.PI*r;
+    var total = segments.reduce(function(a,s){ return a + s.value; }, 0) || 1;
+    var html = '<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="#eef2f7" stroke-width="'+sw+'"/>';
+    var off = 0;
+    segments.forEach(function(s){
+      var len = c * s.value/total;
+      html += '<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="'+s.color+'" stroke-width="'+sw+
+              '" stroke-dasharray="'+Math.max(len-1.5,0)+' '+(c-len+1.5)+'" stroke-dashoffset="'+(-off)+
+              '" transform="rotate(-90 '+cx+' '+cy+')" stroke-linecap="butt"/>';
+      off += len;
+    });
+    html += '<text x="'+cx+'" y="'+(cy-2)+'" text-anchor="middle" style="font-size:26px;font-weight:700;fill:#0f172a">'+centerTop+'</text>';
+    if(centerBottom){
+      html += '<text x="'+cx+'" y="'+(cy+20)+'" text-anchor="middle" style="font-size:11.5px;fill:#7c8aa0">'+centerBottom+'</text>';
+    }
+    svg.innerHTML = html;
+  }
+
+  /* ---------- donuts ---------- */
+  donut('d-health', 160, 62, 16, [
+    {value:86, color:'#f59e0b'},
+    {value:14, color:'#eef2f7'}
+  ], '86', 'เธเธฒเธ 100');
+
+  donut('d-clients', 160, 62, 16, [
+    {value:15, color:'#10b981'},
+    {value:2,  color:'#f59e0b'}
+  ], '17', 'wireless');
+
+  donut('d-devices', 160, 62, 16, [
+    {value:9, color:'#10b981'},
+    {value:3, color:'#e11d48'}
+  ], '9/12', 'online');
+
+  /* ---------- stacked utilization ---------- */
+  var aps = [
+    {name:'AP-03', bssid:'BC-07-1D-AC-8B-29', clients:8, tx:7, rx:34, inter:13, retry:38.3},
+    {name:'AP-02', bssid:'BC-07-1D-AC-8D-69', clients:9, tx:10, rx:29, inter:21, retry:30.1}
+  ];
+
+  var stack = document.getElementById('stack');
+  aps.forEach(function(ap){
+    var used = ap.tx + ap.rx + ap.inter;
+    var idle = Math.max(0, 100 - used);
+    var row = el('div', 'stack-row');
+    row.innerHTML =
+      '<div class="stack-top"><span><b>'+ap.name+'</b> ยท '+ap.clients+' clients ยท ch36 ยท 20 MHz</span>'+
+      '<span>เนเธเนเนเธ <b>'+used+'%</b></span></div>'+
+      '<div class="stack-bar">'+
+        '<i class="seg-tx" data-w="'+ap.tx+'"></i>'+
+        '<i class="seg-rx" data-w="'+ap.rx+'"></i>'+
+        '<i class="seg-int" data-w="'+ap.inter+'"></i>'+
+        '<i class="seg-idle" data-w="'+idle+'" style="width:'+idle+'%"></i>'+
+      '</div>'+
+      '<div class="stack-foot">'+
+        '<span><i class="seg-tx" style="background:#3b82f6"></i> Tx '+ap.tx+'%</span>'+
+        '<span><i style="background:#6366f1"></i> Rx '+ap.rx+'%</span>'+
+        '<span><i style="background:#e11d48"></i> Interference '+ap.inter+'%</span>'+
+        '<span><i style="background:#cbd5e1"></i> Idle '+idle+'%</span>'+
+      '</div>';
+    stack.appendChild(row);
+  });
+
+  /* retry bars: scale 0..50% => height */
+  var maxRetry = 50, hMax = 108;
+  document.getElementById('retry-a').style.height = (30.1/maxRetry*hMax)+'px';
+  document.getElementById('retry-b').style.height = (38.3/maxRetry*hMax)+'px';
+
+  /* ---------- 5 GHz channel bars ---------- */
+  var chans = [
+    {ch:36,  s:251, bss:13, tag:'cur',  gap:false},
+    {ch:40,  s:69,  bss:9},
+    {ch:44,  s:69,  bss:9},
+    {ch:48,  s:87,  bss:10},
+    {ch:52,  s:106, bss:8,  gap:true},
+    {ch:56,  s:79,  bss:7},
+    {ch:60,  s:48,  bss:5},
+    {ch:64,  s:48,  bss:5},
+    {ch:100, s:48,  bss:5,  gap:true},
+    {ch:104, s:48,  bss:5},
+    {ch:108, s:31,  bss:4,  tag:'dfs'},
+    {ch:112, s:31,  bss:4,  tag:'dfs'},
+    {ch:116, s:50,  bss:8,  gap:true},
+    {ch:120, s:50,  bss:8},
+    {ch:124, s:50,  bss:8},
+    {ch:128, s:50,  bss:8},
+    {ch:132, s:55,  bss:6,  gap:true},
+    {ch:136, s:55,  bss:6},
+    {ch:140, s:4,   bss:1},
+    {ch:144, s:4,   bss:1},
+    {ch:149, s:60,  bss:5,  gap:true},
+    {ch:153, s:60,  bss:5},
+    {ch:157, s:80,  bss:6},
+    {ch:161, s:80,  bss:6},
+    {ch:165, s:135, bss:5,  tag:'good'}
+  ];
+  var maxS = 251, barsH = 190;
+  var wrap = document.getElementById('chbars');
+  chans.forEach(function(c){
+    var col = el('div', 'bcol' + (c.gap?' gap':'') + (c.tag==='cur'?' cur':'') + (c.tag==='good'?' good':'') + (c.tag==='dfs'?' dfs':''));
+    col.title = 'เธเนเธญเธ '+c.ch+' ยท '+c.bss+' BSS ยท score '+c.s;
+    var h = Math.max(4, Math.round(c.s/maxS*barsH));
+    col.innerHTML =
+      '<div class="v">'+c.s+'</div>'+
+      '<div class="b" data-h="'+h+'" style="height:0"></div>'+
+      '<div class="l">'+c.ch+'</div>';
+    wrap.appendChild(col);
+  });
+
+  /* ---------- overlapping BSS table ---------- */
+  var ovl = [
+    {ssid:'Ubisoft_TGS2026', bssid:'BC:07:1D:AC:8B:2A', rssi:-48, prim:36, w:'20 MHz', own:true},
+    {ssid:'INTEL_TGS2026',   bssid:'C2:07:1D:AC:8B:2A', rssi:-48, prim:36, w:'20 MHz', own:true},
+    {ssid:'Ubisoft_TGS2026', bssid:'BC:07:1D:AC:8D:6A', rssi:-61, prim:36, w:'20 MHz', own:true},
+    {ssid:'INTEL_TGS2026',   bssid:'C2:07:1D:AC:8D:6A', rssi:-61, prim:36, w:'20 MHz', own:true},
+    {ssid:'TP-Link_DF8A',    bssid:'24:2F:D0:F1:DF:8C', rssi:-65, prim:44, w:'80 MHz'},
+    {ssid:'TP-Link_6FAD',    bssid:'58:04:4F:B5:6F:AF', rssi:-66, prim:44, w:'80 MHz'},
+    {ssid:'Maxbit Wi-Fi True', bssid:'78:20:51:B5:42:8B', rssi:-66, prim:40, w:'80 MHz'},
+    {ssid:'ZLT X21G_5GHz',   bssid:'30:0A:C5:3D:84:06', rssi:-67, prim:48, w:'80 MHz'},
+    {ssid:'(hidden)',        bssid:'5A:88:11:C7:3F:43', rssi:-68, prim:48, w:'80 MHz'},
+    {ssid:'BANDAI NAMCO_02', bssid:'08:40:F3:54:C9:85', rssi:-70, prim:40, w:'80 MHz'},
+    {ssid:'(hidden)',        bssid:'CE:BA:BD:7E:F3:51', rssi:-70, prim:44, w:'80 MHz'},
+    {ssid:'TGS2026-PlayPark', bssid:'D8:EC:5E:72:FD:6B', rssi:-75, prim:48, w:'80 MHz'},
+    {ssid:'CPW-Event_5Ghz',  bssid:'DC:62:79:5A:80:67', rssi:-77, prim:40, w:'80 MHz'}
+  ];
+  var tbody = document.getElementById('ovl');
+  ovl.forEach(function(r){
+    var pct = Math.max(4, Math.min(100, (r.rssi + 95) / 55 * 100));
+    var color = r.rssi >= -60 ? '#10b981' : r.rssi >= -70 ? '#f59e0b' : '#e11d48';
+    var tr = document.createElement('tr');
+    if(r.own) tr.className = 'own';
+    tr.innerHTML =
+      '<td><b>'+r.ssid+'</b></td>'+
+      '<td class="mono">'+r.bssid+'</td>'+
+      '<td><div class="rssi-cell"><span class="mono" style="min-width:32px">'+r.rssi+'</span>'+
+        '<span class="rssi-track"><i style="width:'+pct+'%;background:'+color+'"></i></span></div></td>'+
+      '<td>'+r.prim+'</td>'+
+      '<td>'+r.w+'</td>'+
+      '<td>'+(r.own ? '<span class="tag tag-blue">เธเธญเธเน€เธฃเธฒ</span>' : '<span class="tag tag-amber">เธเธนเธเธญเธทเนเธ</span>')+'</td>';
+    tbody.appendChild(tr);
+  });
+
+  /* ---------- RSSI histogram ---------- */
+  var hist = [
+    {label:'โ’44โ€ฆโ’49', v:3,  color:'#10b981'},
+    {label:'โ’50โ€ฆโ’54', v:1,  color:'#10b981'},
+    {label:'โ’55โ€ฆโ’59', v:9,  color:'#34d399'},
+    {label:'โ’60โ€ฆโ’64', v:4,  color:'#f59e0b'}
+  ];
+  var hw = document.getElementById('rssi-hist');
+  hist.forEach(function(b){
+    var col = el('div', 'bcol');
+    col.style.maxWidth = '78px';
+    var h = Math.round(b.v/9*130);
+    col.innerHTML =
+      '<div class="v" style="font-size:12px;color:#475569;font-weight:650">'+b.v+'</div>'+
+      '<div class="b" data-h="'+h+'" style="height:0;max-width:52px;background:linear-gradient(180deg,'+b.color+'cc,'+b.color+')"></div>'+
+      '<div class="l" style="font-size:11px">'+b.label+'</div>';
+    hw.appendChild(col);
+  });
+
+  /* ---------- animate bars ---------- */
+  requestAnimationFrame(function(){
+    setTimeout(function(){
+      document.querySelectorAll('.stack-bar i[data-w]').forEach(function(i){
+        i.style.width = i.getAttribute('data-w') + '%';
+      });
+      document.querySelectorAll('.bcol .b[data-h]').forEach(function(b){
+        b.style.height = b.getAttribute('data-h') + 'px';
+      });
+    }, 60);
+  });
+})();
+</script>
+
+
+</body>
+</html>
+
